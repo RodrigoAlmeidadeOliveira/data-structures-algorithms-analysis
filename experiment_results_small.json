@@ -1,0 +1,2000 @@
+[
+  {
+    "structure": "LinearArray",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {},
+    "statistics": {
+      "mean_time": 6.652766993890206e-05,
+      "std_time": 5.318250104091309e-06,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 1000.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 6.652766993890206e-05,
+      "std_execution_time": 5.318250104091309e-06,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 1000.0,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "LinearArray",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {},
+    "statistics": {
+      "mean_time": 2.2524111341529834e-05,
+      "std_time": 4.110378025247359e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 500.5,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 2.2524111341529834e-05,
+      "std_execution_time": 4.110378025247359e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 500.5,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "BST",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "balanced": false
+    },
+    "statistics": {
+      "mean_time": 0.0012939026540455718,
+      "std_time": 0.0003079010214298262,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 11030.0,
+      "std_iterations": 518.6565980170952
+    },
+    "metrics": {
+      "avg_execution_time": 0.0012939026540455718,
+      "std_execution_time": 0.0003079010214298262,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 11030.0,
+      "std_iterations": 518.6565980170952,
+      "avg_height": 21.0,
+      "std_height": 0.0
+    }
+  },
+  {
+    "structure": "BST",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "balanced": false
+    },
+    "statistics": {
+      "mean_time": 1.0047219693660735e-06,
+      "std_time": 4.210313796778219e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 12.028999999999998,
+      "std_iterations": 0.5186565980170953
+    },
+    "metrics": {
+      "avg_execution_time": 1.0047219693660735e-06,
+      "std_execution_time": 4.210313796778219e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 12.028999999999998,
+      "std_iterations": 0.5186565980170953
+    }
+  },
+  {
+    "structure": "AVL",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "balanced": true
+    },
+    "statistics": {
+      "mean_time": 0.00346680567599833,
+      "std_time": 5.2011620325092766e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 10417.333333333334,
+      "std_iterations": 9.392668535736915
+    },
+    "metrics": {
+      "avg_execution_time": 0.00346680567599833,
+      "std_execution_time": 5.2011620325092766e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 10417.333333333334,
+      "std_iterations": 9.392668535736915,
+      "avg_height": 12.0,
+      "std_height": 0.0
+    }
+  },
+  {
+    "structure": "AVL",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "balanced": true
+    },
+    "statistics": {
+      "mean_time": 7.709719939157366e-07,
+      "std_time": 1.1894623511251591e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 9.214333333333334,
+      "std_iterations": 0.014267289706021334
+    },
+    "metrics": {
+      "avg_execution_time": 7.709719939157366e-07,
+      "std_execution_time": 1.1894623511251591e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 9.214333333333334,
+      "std_iterations": 0.014267289706021334
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "M": 100,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 0.0004889303430293997,
+      "std_time": 0.00018095151959400793,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 6081.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0004889303430293997,
+      "std_execution_time": 0.00018095151959400793,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 6081.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 10.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.9,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 10.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 18.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "M": 100,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 3.324443435606857e-07,
+      "std_time": 1.2228216387695055e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 7.081,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 3.324443435606857e-07,
+      "std_execution_time": 1.2228216387695055e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 7.081,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "M": 100,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 0.000522708345670253,
+      "std_time": 4.958370390845857e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 5930.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.000522708345670253,
+      "std_execution_time": 4.958370390845857e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 5930.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 10.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.9,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 10.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 21.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "M": 100,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 4.359720041975379e-07,
+      "std_time": 1.1774610633788913e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 6.93,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 4.359720041975379e-07,
+      "std_execution_time": 1.1774610633788913e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 6.93,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "M": 100,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 0.0010026806849054992,
+      "std_time": 3.4847713564688715e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 5931.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0010026806849054992,
+      "std_execution_time": 3.4847713564688715e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 5931.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 10.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.9,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 10.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 18.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "M": 100,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 9.354306578946612e-07,
+      "std_time": 3.618713168910738e-09,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 6.931,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 9.354306578946612e-07,
+      "std_execution_time": 3.618713168910738e-09,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 6.931,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 0.00022337533300742507,
+      "std_time": 4.796745240617931e-06,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 1527.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.00022337533300742507,
+      "std_execution_time": 4.796745240617931e-06,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 1527.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 1.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.38400000000000006,
+      "std_collision_rate": 5.551115123125783e-17,
+      "avg_avg_chain_length": 1.6233766233766234,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 5.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 2.115553361363709e-07,
+      "std_time": 9.219660920783606e-09,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.527,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 2.115553361363709e-07,
+      "std_execution_time": 9.219660920783606e-09,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.527,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 0.0004352503262149791,
+      "std_time": 7.113109123723624e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 1472.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0004352503262149791,
+      "std_execution_time": 7.113109123723624e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 1472.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 1.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.35200000000000004,
+      "std_collision_rate": 5.551115123125783e-17,
+      "avg_avg_chain_length": 1.5432098765432098,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 5.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 3.5126400568212067e-07,
+      "std_time": 2.1322379603541183e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.472,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 3.5126400568212067e-07,
+      "std_execution_time": 2.1322379603541183e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.472,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 0.0010794999931628506,
+      "std_time": 0.00028415961474589566,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 1494.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0010794999931628506,
+      "std_execution_time": 0.00028415961474589566,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 1494.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 1.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.369,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 1.5847860538827259,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 5.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 9.869166727488239e-07,
+      "std_time": 1.3117484316651148e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.494,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 9.869166727488239e-07,
+      "std_execution_time": 1.3117484316651148e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.494,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 0.00019981900307660302,
+      "std_time": 5.191405993764671e-06,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 1115.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.00019981900307660302,
+      "std_execution_time": 5.191405993764671e-06,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 1115.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 0.20000000000000004,
+      "std_load_factor": 2.7755575615628914e-17,
+      "avg_collision_rate": 0.102,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 1.1135857461024499,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 4.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 1.8300001587097842e-07,
+      "std_time": 3.980403614578228e-09,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.115,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 1.8300001587097842e-07,
+      "std_execution_time": 3.980403614578228e-09,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.115,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 0.00033181965894376236,
+      "std_time": 1.4337747188487133e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 1073.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.00033181965894376236,
+      "std_execution_time": 1.4337747188487133e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 1073.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 0.20000000000000004,
+      "std_load_factor": 2.7755575615628914e-17,
+      "avg_collision_rate": 0.071,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 1.0764262648008611,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 3.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 4.2956900627662735e-07,
+      "std_time": 1.2047251787510533e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.073,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 4.2956900627662735e-07,
+      "std_execution_time": 1.2047251787510533e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.073,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "insert",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 0.0008525696660702428,
+      "std_time": 3.75502845320448e-06,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 1262.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0008525696660702428,
+      "std_execution_time": 3.75502845320448e-06,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 1262.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 0.20000000000000004,
+      "std_load_factor": 2.7755575615628914e-17,
+      "avg_collision_rate": 0.216,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 1.2755102040816326,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 5.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 1000,
+    "operation": "search",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 8.30235988056908e-07,
+      "std_time": 1.0458918663507013e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.262,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 8.30235988056908e-07,
+      "std_execution_time": 1.0458918663507013e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.262,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "LinearArray",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {},
+    "statistics": {
+      "mean_time": 0.00029665268569563824,
+      "std_time": 3.839254559361488e-06,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 5000.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.00029665268569563824,
+      "std_execution_time": 3.839254559361488e-06,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 5000.0,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "LinearArray",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {},
+    "statistics": {
+      "mean_time": 0.00012773584733561923,
+      "std_time": 7.669902934617678e-06,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2538.6769999999997,
+      "std_iterations": 28.350185937073817
+    },
+    "metrics": {
+      "avg_execution_time": 0.00012773584733561923,
+      "std_execution_time": 7.669902934617678e-06,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2538.6769999999997,
+      "std_iterations": 28.350185937073817
+    }
+  },
+  {
+    "structure": "BST",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "balanced": false
+    },
+    "statistics": {
+      "mean_time": 0.01670740300323814,
+      "std_time": 0.0012646127614892152,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 71162.33333333333,
+      "std_iterations": 2372.0590680297614
+    },
+    "metrics": {
+      "avg_execution_time": 0.01670740300323814,
+      "std_execution_time": 0.0012646127614892152,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 71162.33333333333,
+      "std_iterations": 2372.0590680297614,
+      "avg_height": 27.666666666666668,
+      "std_height": 1.8856180831641267
+    }
+  },
+  {
+    "structure": "BST",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "balanced": false
+    },
+    "statistics": {
+      "mean_time": 2.8105829648363094e-06,
+      "std_time": 7.91845391852185e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 15.274000000000001,
+      "std_iterations": 0.4126750133781628
+    },
+    "metrics": {
+      "avg_execution_time": 2.8105829648363094e-06,
+      "std_execution_time": 7.91845391852185e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 15.274000000000001,
+      "std_iterations": 0.4126750133781628
+    }
+  },
+  {
+    "structure": "AVL",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "balanced": true
+    },
+    "statistics": {
+      "mean_time": 0.030227652692701668,
+      "std_time": 0.0016324741223256401,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 63894.333333333336,
+      "std_iterations": 155.52134544456877
+    },
+    "metrics": {
+      "avg_execution_time": 0.030227652692701668,
+      "std_execution_time": 0.0016324741223256401,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 63894.333333333336,
+      "std_iterations": 155.52134544456877,
+      "avg_height": 15.0,
+      "std_height": 0.0
+    }
+  },
+  {
+    "structure": "AVL",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "balanced": true
+    },
+    "statistics": {
+      "mean_time": 1.2563749914988875e-06,
+      "std_time": 9.562253382061612e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 11.534,
+      "std_iterations": 0.08019975062305372
+    },
+    "metrics": {
+      "avg_execution_time": 1.2563749914988875e-06,
+      "std_execution_time": 9.562253382061612e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 11.534,
+      "std_iterations": 0.08019975062305372
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "M": 100,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 0.004993000339406232,
+      "std_time": 0.00031980409182184806,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 130092.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.004993000339406232,
+      "std_execution_time": 0.00031980409182184806,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 130092.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 50.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.98,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 50.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 70.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "M": 100,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 8.716106337184708e-07,
+      "std_time": 2.478037994408352e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 26.949333333333332,
+      "std_iterations": 0.4406694402333283
+    },
+    "metrics": {
+      "avg_execution_time": 8.716106337184708e-07,
+      "std_execution_time": 2.478037994408352e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 26.949333333333332,
+      "std_iterations": 0.4406694402333283
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "M": 100,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 0.005386847362387925,
+      "std_time": 2.17094876440092e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 129699.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.005386847362387925,
+      "std_execution_time": 2.17094876440092e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 129699.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 50.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.98,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 50.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 72.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "M": 100,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 1.2394303145507972e-06,
+      "std_time": 3.669050685189295e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 26.773666666666667,
+      "std_iterations": 0.26484251085419824
+    },
+    "metrics": {
+      "avg_execution_time": 1.2394303145507972e-06,
+      "std_execution_time": 3.669050685189295e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 26.773666666666667,
+      "std_iterations": 0.26484251085419824
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "M": 100,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 0.00886136134310315,
+      "std_time": 0.0003521799378768657,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 130052.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.00886136134310315,
+      "std_execution_time": 0.0003521799378768657,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 130052.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 50.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.98,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 50.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 73.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "M": 100,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 1.567097322549671e-06,
+      "std_time": 9.15766936063747e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 26.650000000000002,
+      "std_iterations": 0.2747228906856266
+    },
+    "metrics": {
+      "avg_execution_time": 1.567097322549671e-06,
+      "std_execution_time": 9.15766936063747e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 26.650000000000002,
+      "std_iterations": 0.2747228906856266
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 0.0016747216577641666,
+      "std_time": 0.000139532966632546,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 17481.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0016747216577641666,
+      "std_execution_time": 0.000139532966632546,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 17481.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 5.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.801,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 5.025125628140704,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 13.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 3.3238931791856883e-07,
+      "std_time": 7.946177614387861e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 4.506666666666667,
+      "std_iterations": 0.07845734863959895
+    },
+    "metrics": {
+      "avg_execution_time": 3.3238931791856883e-07,
+      "std_execution_time": 7.946177614387861e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 4.506666666666667,
+      "std_iterations": 0.07845734863959895
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 0.002296972321346402,
+      "std_time": 1.3640740516860232e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 17724.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.002296972321346402,
+      "std_execution_time": 1.3640740516860232e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 17724.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 5.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.801,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 5.025125628140704,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 14.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 4.1909700181956093e-07,
+      "std_time": 2.9698414864080394e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 4.495666666666667,
+      "std_iterations": 0.029847761874031188
+    },
+    "metrics": {
+      "avg_execution_time": 4.1909700181956093e-07,
+      "std_execution_time": 2.9698414864080394e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 4.495666666666667,
+      "std_iterations": 0.029847761874031188
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 0.005186166342658301,
+      "std_time": 0.00033970175656562626,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 17613.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.005186166342658301,
+      "std_execution_time": 0.00033970175656562626,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 17613.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 5.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.8018,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 5.045408678102926,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 14.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 1.3098333535405494e-06,
+      "std_time": 2.2172414843822344e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 4.5249999999999995,
+      "std_iterations": 0.0063770421565697046
+    },
+    "metrics": {
+      "avg_execution_time": 1.3098333535405494e-06,
+      "std_execution_time": 2.2172414843822344e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 4.5249999999999995,
+      "std_iterations": 0.0063770421565697046
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 0.0011143469794963796,
+      "std_time": 7.947305248426838e-06,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 7400.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0011143469794963796,
+      "std_execution_time": 7.947305248426838e-06,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 7400.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 1.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.3604,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 1.5634771732332708,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 5.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 2.067500026896596e-07,
+      "std_time": 1.4764769769287605e-09,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.5046666666666666,
+      "std_iterations": 0.013912424503139514
+    },
+    "metrics": {
+      "avg_execution_time": 2.067500026896596e-07,
+      "std_execution_time": 1.4764769769287605e-09,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.5046666666666666,
+      "std_iterations": 0.013912424503139514
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 0.0018049583304673433,
+      "std_time": 6.939612172270284e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 7534.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0018049583304673433,
+      "std_execution_time": 6.939612172270284e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 7534.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 1.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.3718000000000001,
+      "std_collision_rate": 5.551115123125783e-17,
+      "avg_avg_chain_length": 1.5918497293855463,
+      "std_avg_chain_length": 2.220446049250313e-16,
+      "avg_max_chain_length": 6.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 3.8081900371859467e-07,
+      "std_time": 6.58830885519824e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.478666666666667,
+      "std_iterations": 0.03886157771143905
+    },
+    "metrics": {
+      "avg_execution_time": 3.8081900371859467e-07,
+      "std_execution_time": 6.58830885519824e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.478666666666667,
+      "std_iterations": 0.03886157771143905
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "insert",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 0.004667194657182942,
+      "std_time": 3.938747484056659e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 12138.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.004667194657182942,
+      "std_execution_time": 3.938747484056659e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 12138.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 1.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.6348,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 2.738225629791895,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 11.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 5000,
+    "operation": "search",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 1.1740000142405431e-06,
+      "std_time": 3.926442549296836e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 3.468666666666667,
+      "std_iterations": 0.03489348872720454
+    },
+    "metrics": {
+      "avg_execution_time": 1.1740000142405431e-06,
+      "std_execution_time": 3.926442549296836e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 3.468666666666667,
+      "std_iterations": 0.03489348872720454
+    }
+  },
+  {
+    "structure": "LinearArray",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {},
+    "statistics": {
+      "mean_time": 0.0005823193350806832,
+      "std_time": 1.0950496689046131e-05,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 10000.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0005823193350806832,
+      "std_execution_time": 1.0950496689046131e-05,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 10000.0,
+      "std_iterations": 0.0
+    }
+  },
+  {
+    "structure": "LinearArray",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {},
+    "statistics": {
+      "mean_time": 0.0002472896109878396,
+      "std_time": 4.298495738308433e-06,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 4970.0109999999995,
+      "std_iterations": 40.33364556628471
+    },
+    "metrics": {
+      "avg_execution_time": 0.0002472896109878396,
+      "std_execution_time": 4.298495738308433e-06,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 4970.0109999999995,
+      "std_iterations": 40.33364556628471
+    }
+  },
+  {
+    "structure": "BST",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "balanced": false
+    },
+    "statistics": {
+      "mean_time": 0.0191034860132883,
+      "std_time": 0.0005099256351172447,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 149794.33333333334,
+      "std_iterations": 5400.586902262466
+    },
+    "metrics": {
+      "avg_execution_time": 0.0191034860132883,
+      "std_execution_time": 0.0005099256351172447,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 149794.33333333334,
+      "std_iterations": 5400.586902262466,
+      "avg_height": 30.333333333333332,
+      "std_height": 0.4714045207910317
+    }
+  },
+  {
+    "structure": "BST",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "balanced": false
+    },
+    "statistics": {
+      "mean_time": 1.4993470006932814e-06,
+      "std_time": 8.351560996102535e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 16.159333333333333,
+      "std_iterations": 0.5937352571269087
+    },
+    "metrics": {
+      "avg_execution_time": 1.4993470006932814e-06,
+      "std_execution_time": 8.351560996102535e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 16.159333333333333,
+      "std_iterations": 0.5937352571269087
+    }
+  },
+  {
+    "structure": "AVL",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "balanced": true
+    },
+    "statistics": {
+      "mean_time": 0.059544764342717826,
+      "std_time": 0.006162256573847795,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 138072.66666666666,
+      "std_iterations": 291.515961064837
+    },
+    "metrics": {
+      "avg_execution_time": 0.059544764342717826,
+      "std_execution_time": 0.006162256573847795,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 138072.66666666666,
+      "std_iterations": 291.515961064837,
+      "avg_height": 16.0,
+      "std_height": 0.0
+    }
+  },
+  {
+    "structure": "AVL",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "balanced": true
+    },
+    "statistics": {
+      "mean_time": 1.1188613328461846e-06,
+      "std_time": 3.526663922724081e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 12.552,
+      "std_iterations": 0.0213541565040626
+    },
+    "metrics": {
+      "avg_execution_time": 1.1188613328461846e-06,
+      "std_execution_time": 3.526663922724081e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 12.552,
+      "std_iterations": 0.0213541565040626
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "M": 100,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 0.018712388681403052,
+      "std_time": 0.0010402245375388166,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 510671.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.018712388681403052,
+      "std_execution_time": 0.0010402245375388166,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 510671.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 100.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.9899999999999999,
+      "std_collision_rate": 1.1102230246251565e-16,
+      "avg_avg_chain_length": 100.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 125.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "M": 100,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 1.5808056535509725e-06,
+      "std_time": 8.248017873290184e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 52.45133333333333,
+      "std_iterations": 0.2783299400990748
+    },
+    "metrics": {
+      "avg_execution_time": 1.5808056535509725e-06,
+      "std_execution_time": 8.248017873290184e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 52.45133333333333,
+      "std_iterations": 0.2783299400990748
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "M": 100,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 0.037116805324330926,
+      "std_time": 0.024793571791947137,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 510340.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.037116805324330926,
+      "std_execution_time": 0.024793571791947137,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 510340.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 100.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.9899999999999999,
+      "std_collision_rate": 1.1102230246251565e-16,
+      "avg_avg_chain_length": 100.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 130.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "M": 100,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 2.2941390052437783e-06,
+      "std_time": 6.157992200228151e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 52.52733333333333,
+      "std_iterations": 0.8832645256219818
+    },
+    "metrics": {
+      "avg_execution_time": 2.2941390052437783e-06,
+      "std_execution_time": 6.157992200228151e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 52.52733333333333,
+      "std_iterations": 0.8832645256219818
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "M": 100,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 0.026049097320841003,
+      "std_time": 0.0005878608407596372,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 510663.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.026049097320841003,
+      "std_execution_time": 0.0005878608407596372,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 510663.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 100.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.9899999999999999,
+      "std_collision_rate": 1.1102230246251565e-16,
+      "avg_avg_chain_length": 100.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 137.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "M": 100,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 2.2201803318845733e-06,
+      "std_time": 8.587649160375884e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 51.37166666666667,
+      "std_iterations": 0.6825082824080254
+    },
+    "metrics": {
+      "avg_execution_time": 2.2201803318845733e-06,
+      "std_execution_time": 8.587649160375884e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 51.37166666666667,
+      "std_iterations": 0.6825082824080254
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 0.004204291986146321,
+      "std_time": 0.0005444081190617326,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 59831.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.004204291986146321,
+      "std_execution_time": 0.0005444081190617326,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 59831.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 10.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.9,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 10.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 25.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 6.864029952945809e-07,
+      "std_time": 5.064561887229885e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 6.9943333333333335,
+      "std_iterations": 0.04805783552716
+    },
+    "metrics": {
+      "avg_execution_time": 6.864029952945809e-07,
+      "std_execution_time": 5.064561887229885e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 6.9943333333333335,
+      "std_iterations": 0.04805783552716
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 0.005513596988748759,
+      "std_time": 0.0005034777604416991,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 59984.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.005513596988748759,
+      "std_execution_time": 0.0005034777604416991,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 59984.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 10.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.9,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 10.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 20.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 6.795419806924959e-07,
+      "std_time": 3.035865856751961e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 6.861999999999999,
+      "std_iterations": 0.02870540018881464
+    },
+    "metrics": {
+      "avg_execution_time": 6.795419806924959e-07,
+      "std_execution_time": 3.035865856751961e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 6.861999999999999,
+      "std_iterations": 0.02870540018881464
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 0.011593333329074085,
+      "std_time": 0.0008607615653982983,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 60284.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.011593333329074085,
+      "std_execution_time": 0.0008607615653982983,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 60284.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 10.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.9,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 10.0,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 26.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "M": 1000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 1.1186106712557377e-06,
+      "std_time": 1.5284063025926563e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 7.020666666666666,
+      "std_iterations": 0.08040038695318717
+    },
+    "metrics": {
+      "avg_execution_time": 1.1186106712557377e-06,
+      "std_execution_time": 1.5284063025926563e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 7.020666666666666,
+      "std_iterations": 0.08040038695318717
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 0.0026860139914788306,
+      "std_time": 0.00017715103970544256,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 19936.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.0026860139914788306,
+      "std_execution_time": 0.00017715103970544256,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 19936.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 2.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.567,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 2.3094688221709005,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 10.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "division"
+    },
+    "statistics": {
+      "mean_time": 2.6012499195834e-07,
+      "std_time": 3.919778071183962e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.9516666666666667,
+      "std_iterations": 0.013474255287605125
+    },
+    "metrics": {
+      "avg_execution_time": 2.6012499195834e-07,
+      "std_execution_time": 3.919778071183962e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.9516666666666667,
+      "std_iterations": 0.013474255287605125
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 0.004349236337778469,
+      "std_time": 0.0004331125763812216,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 19985.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.004349236337778469,
+      "std_execution_time": 0.0004331125763812216,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 19985.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 2.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.568,
+      "std_collision_rate": 0.0,
+      "avg_avg_chain_length": 2.314814814814815,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 8.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "multiplication"
+    },
+    "statistics": {
+      "mean_time": 4.2723631486296657e-07,
+      "std_time": 1.0133550931091356e-07,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 2.984,
+      "std_iterations": 0.04181706190858784
+    },
+    "metrics": {
+      "avg_execution_time": 4.2723631486296657e-07,
+      "std_execution_time": 1.0133550931091356e-07,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 2.984,
+      "std_iterations": 0.04181706190858784
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "insert",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 0.011154735984746367,
+      "std_time": 0.00014710547756549802,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 38666.0,
+      "std_iterations": 0.0
+    },
+    "metrics": {
+      "avg_execution_time": 0.011154735984746367,
+      "std_execution_time": 0.00014710547756549802,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 38666.0,
+      "std_iterations": 0.0,
+      "avg_load_factor": 2.0,
+      "std_load_factor": 0.0,
+      "avg_collision_rate": 0.7837999999999999,
+      "std_collision_rate": 1.1102230246251565e-16,
+      "avg_avg_chain_length": 4.6253469010175765,
+      "std_avg_chain_length": 0.0,
+      "avg_max_chain_length": 19.0,
+      "std_max_chain_length": 0.0
+    }
+  },
+  {
+    "structure": "HashTable",
+    "data_size": 10000,
+    "operation": "search",
+    "parameters": {
+      "M": 5000,
+      "hash_function": "folding"
+    },
+    "statistics": {
+      "mean_time": 9.87610682689895e-07,
+      "std_time": 6.983857914422324e-08,
+      "mean_memory": 0.0,
+      "std_memory": 0.0,
+      "mean_iterations": 4.901666666666666,
+      "std_iterations": 0.10837383858149925
+    },
+    "metrics": {
+      "avg_execution_time": 9.87610682689895e-07,
+      "std_execution_time": 6.983857914422324e-08,
+      "avg_memory_usage": 0.0,
+      "std_memory_usage": 0.0,
+      "avg_iterations": 4.901666666666666,
+      "std_iterations": 0.10837383858149925
+    }
+  }
+]
