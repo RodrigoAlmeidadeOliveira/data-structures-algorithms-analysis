@@ -1,0 +1,79 @@
+{
+  "dataset_info": {
+    "total_records": 25000,
+    "unique_matriculas": 25000,
+    "unique_cpfs": 25000,
+    "date_range": {
+      "oldest_entry": "2010-01-01",
+      "newest_entry": "2024-12-30"
+    }
+  },
+  "salary_statistics": {
+    "mean": 4855.8137396,
+    "median": 3093.855,
+    "std": 5142.0651228843335,
+    "min": 400.08,
+    "max": 24987.78,
+    "quartiles": {
+      "q1": 965.0675,
+      "q2": 3093.855,
+      "q3": 7176.8575
+    }
+  },
+  "sector_distribution": {
+    "1003": 2581,
+    "1008": 2540,
+    "1009": 2516,
+    "1001": 2512,
+    "1010": 2501,
+    "1004": 2501,
+    "1005": 2499,
+    "1007": 2477,
+    "1002": 2455,
+    "1006": 2418
+  },
+  "status_distribution": {
+    "Ativo": 6400,
+    "Inativo": 6271,
+    "Afastado": 6188,
+    "Licença": 6141
+  },
+  "position_distribution": {
+    "Professor Associado": 1625,
+    "Professor Adjunto": 1610,
+    "Bolsista IC": 1601,
+    "Estudante Doutorado": 1599,
+    "Bolsista PIBIC": 1590,
+    "Monitor": 1585,
+    "Auxiliar": 1581,
+    "Coordenador": 1578,
+    "Estudante Graduação": 1576,
+    "Pesquisador": 1568,
+    "Bibliotecário": 1561,
+    "Estudante Mestrado": 1558,
+    "Secretário": 1515,
+    "Técnico Administrativo": 1511,
+    "Professor Titular": 1474,
+    "Analista de Sistemas": 1468
+  },
+  "level_distribution": {
+    "Ensino Médio": 4220,
+    "Especialização": 4200,
+    "Doutorado": 4198,
+    "Pós-Doutorado": 4182,
+    "Mestrado": 4114,
+    "Graduação": 4086
+  },
+  "yearly_distribution": {
+    "2015": 2532,
+    "2016": 2497,
+    "2017": 2570,
+    "2018": 2502,
+    "2019": 2430,
+    "2020": 2526,
+    "2021": 2490,
+    "2022": 2505,
+    "2023": 2443,
+    "2024": 2505
+  }
+}
