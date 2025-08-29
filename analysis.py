@@ -98,18 +98,18 @@ class ResultAnalyzer:
         
         return "Indeterminado"
     
-    def generate_plots(self):
+    def generate_plots(self, suffix: str = ""):
         # Cria diretório para plots
         os.makedirs('plots', exist_ok=True)
         
         # Plot 1: Tempo de inserção por estrutura
-        self._plot_insertion_times()
+        self._plot_insertion_times(suffix)
         
         # Plot 2: Tempo de busca por estrutura
-        self._plot_search_times()
+        self._plot_search_times(suffix)
         
         # Plot 3: Comparação de iterações
-        self._plot_iterations_comparison()
+        self._plot_iterations_comparison(suffix)
         
         # Plot 4: Análise específica de Hash Table
         self._plot_hash_analysis()
@@ -117,7 +117,7 @@ class ResultAnalyzer:
         # Plot 5: Altura das árvores
         self._plot_tree_heights()
     
-    def _plot_insertion_times(self):
+    def _plot_insertion_times(self, suffix: str = ""):
         fig, ax = plt.subplots(figsize=(12, 6))
         
         structures = ['LinearArray', 'BST', 'AVL']
@@ -142,10 +142,10 @@ class ResultAnalyzer:
         ax.set_yscale('log')
         
         plt.tight_layout()
-        plt.savefig('plots/insertion_times.png', dpi=150)
+        plt.savefig(f'plots/insertion_times{suffix}.png', dpi=150)
         plt.close()
     
-    def _plot_search_times(self):
+    def _plot_search_times(self, suffix: str = ""):
         fig, ax = plt.subplots(figsize=(12, 6))
         
         structures = ['LinearArray', 'BST', 'AVL']
@@ -170,10 +170,10 @@ class ResultAnalyzer:
         ax.set_yscale('log')
         
         plt.tight_layout()
-        plt.savefig('plots/search_times.png', dpi=150)
+        plt.savefig(f'plots/search_times{suffix}.png', dpi=150)
         plt.close()
     
-    def _plot_iterations_comparison(self):
+    def _plot_iterations_comparison(self, suffix: str = ""):
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
         
         # Inserção
@@ -211,7 +211,7 @@ class ResultAnalyzer:
         ax2.set_yscale('log')
         
         plt.tight_layout()
-        plt.savefig('plots/iterations_comparison.png', dpi=150)
+        plt.savefig(f'plots/iterations_comparison{suffix}.png', dpi=150)
         plt.close()
     
     def _plot_hash_analysis(self):

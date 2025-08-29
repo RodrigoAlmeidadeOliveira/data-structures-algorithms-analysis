@@ -40,9 +40,10 @@ class ExperimentResult:
 
 
 class ExperimentRunner:
-    def __init__(self, data_sizes: List[int] = None, num_rounds: int = 5):
+    def __init__(self, data_sizes: List[int] = None, num_rounds: int = 5, data_generator: DataGenerator = None):
         self.data_sizes = data_sizes or [10000, 50000, 100000]
         self.num_rounds = num_rounds
+        self.data_generator = data_generator or DataGenerator(use_realistic_data=False)
         self.collector = MetricsCollector()
         self.results: List[ExperimentResult] = []
     
@@ -54,8 +55,8 @@ class ExperimentRunner:
         for size in self.data_sizes:
             print(f"\n--- Tamanho do Dataset: {size} registros ---")
             
-            # Gera dados para este tamanho
-            data = DataGenerator.generate_records(size, seed=42)
+            # Gera dados para este tamanho usando o gerador configurado
+            data = self.data_generator.generate_records(size, seed=42)
             
             # Experimentos com Array Linear
             self._run_linear_array_experiment(data, size)
