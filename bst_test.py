@@ -10,30 +10,43 @@ first_names = ["Luan", "Alice", "Bruno", "Carla", "Diego", "Elisa", "Felipe", "G
 last_names = ["Silva", "Costa", "Mendes", "Ferreira", "Oliveira", "Pereira", "Santos", "Rocha", "Lopes","Aguiar","Loyola","Correa","Hipona","Aquino", 
               "Almeida", "Barbosa", "Cardoso", "Dias", "Esteves", "Fonseca", "Gomes", "Henrique", "Igor","Darc","Oviedo","Alcântara"]
 
-# gerar matricula de 9 digitos
-def gerar_matricula():
-    return random.randint(100000000, 999999999)
+sectors = ["Setor A", "Setor B", "Setor C", "Setor D", "Setor E"]
+domains = ["@bol.com","@aol.com","@hotmail.com","@uol.com","@ig.com","@ibest.com"]
+email = ["aux_", "sec_", "sel_", "dir_", "dev_"]
 
-# gerar nome aleatorio
-def gerar_nome():
+def random_name():
     return f"{random.choice(first_names)} {random.choice(last_names)}"
 
-# gerar salario entre 1000 e 20000
-def gerar_salario():
-    return random.randint(1000, 20000)
+def random_id():
+    return random.randint(100000000, 999999999)  # ID com 6 dígitos
 
-# gerar codigo do setor entre 1 e 50
-def gerar_codigo_setor():
-    return random.randint(1, 50)
+def random_cep():
+    return f"{random.randint(10000, 99999)}-{random.randint(100, 999)}"  # formato 00000-000
+
+def random_name():
+    return f"{random.choice(first_names)} {random.choice(last_names)}"
+
+def random_sector():
+    return f"{random.choice(sectors)}"
+
+def random_age():
+    return random.randint(18, 65)
+
+def random_email():
+    return f"{random.choice(email)}{random.randint(0, 2025)}{random.choice(domains)}"
 
 # criar um registro completo
 def gerar_registro():
     return {
-        "matricula": gerar_matricula(),
-        "nome": gerar_nome(),
-        "salario": gerar_salario(),
-        "codigo_setor": gerar_codigo_setor()
+        "Nome": random_name(),
+        "Idade": random_age(),
+        "ID": random_id(),
+        "CEP": random_cep(),
+        "Setor": random_sector(),
+        "E-mail": random_email()
     }
+
+
 
 # BST sem balanceamento - inserir node
 def inserir_bst(arvore, registro):
@@ -43,27 +56,27 @@ def inserir_bst(arvore, registro):
     if arvore is None:
         return {"registro": registro, "esquerda": None, "direita": None}
     
-    if registro["matricula"] < arvore["registro"]["matricula"]:
+    if registro["ID"] < arvore["registro"]["ID"]:
         arvore["esquerda"] = inserir_bst(arvore["esquerda"], registro)
     else:
         arvore["direita"] = inserir_bst(arvore["direita"], registro)
     
     return arvore
 
-# BST sem balanceamento - buscar por matricula
-def buscar_bst(arvore, matricula):
+# BST sem balanceamento - buscar por ID
+def buscar_bst(arvore, id_busca):
     global iteracoes_busca
     iteracoes_busca += 1
     
     if arvore is None:
         return None
     
-    if matricula == arvore["registro"]["matricula"]:
+    if id_busca == arvore["registro"]["ID"]:
         return arvore["registro"]
-    elif matricula < arvore["registro"]["matricula"]:
-        return buscar_bst(arvore["esquerda"], matricula)
+    elif id_busca < arvore["registro"]["ID"]:
+        return buscar_bst(arvore["esquerda"], id_busca)
     else:
-        return buscar_bst(arvore["direita"], matricula)
+        return buscar_bst(arvore["direita"], id_busca)
 
 # calcular altura da arvore
 def calcular_altura(arvore):
@@ -83,7 +96,7 @@ def inserir_bst_balanceada(arvore, registro):
     if arvore is None:
         return {"registro": registro, "esquerda": None, "direita": None, "altura": 1}
     
-    if registro["matricula"] < arvore["registro"]["matricula"]:
+    if registro["ID"] < arvore["registro"]["ID"]:
         arvore["esquerda"] = inserir_bst_balanceada(arvore["esquerda"], registro)
     else:
         arvore["direita"] = inserir_bst_balanceada(arvore["direita"], registro)
@@ -97,20 +110,20 @@ def inserir_bst_balanceada(arvore, registro):
     balance = altura_esquerda - altura_direita
     
     # rotacao direita
-    if balance > 1 and registro["matricula"] < arvore["esquerda"]["registro"]["matricula"]:
+    if balance > 1 and registro["ID"] < arvore["esquerda"]["registro"]["ID"]:
         return rotacao_direita(arvore)
     
     # rotacao esquerda
-    if balance < -1 and registro["matricula"] > arvore["direita"]["registro"]["matricula"]:
+    if balance < -1 and registro["ID"] > arvore["direita"]["registro"]["ID"]:
         return rotacao_esquerda(arvore)
     
     # rotacao esquerda-direita
-    if balance > 1 and registro["matricula"] > arvore["esquerda"]["registro"]["matricula"]:
+    if balance > 1 and registro["ID"] > arvore["esquerda"]["registro"]["ID"]:
         arvore["esquerda"] = rotacao_esquerda(arvore["esquerda"])
         return rotacao_direita(arvore)
     
     # rotacao direita-esquerda
-    if balance < -1 and registro["matricula"] < arvore["direita"]["registro"]["matricula"]:
+    if balance < -1 and registro["ID"] < arvore["direita"]["registro"]["ID"]:
         arvore["direita"] = rotacao_direita(arvore["direita"])
         return rotacao_esquerda(arvore)
     
@@ -155,19 +168,19 @@ def rotacao_esquerda(x):
     return y
 
 # buscar na BST balanceada
-def buscar_bst_balanceada(arvore, matricula):
+def buscar_bst_balanceada(arvore, id_busca):
     global iteracoes_busca_balanceada
     iteracoes_busca_balanceada += 1
     
     if arvore is None:
         return None
     
-    if matricula == arvore["registro"]["matricula"]:
+    if id_busca == arvore["registro"]["ID"]:
         return arvore["registro"]
-    elif matricula < arvore["registro"]["matricula"]:
-        return buscar_bst_balanceada(arvore["esquerda"], matricula)
+    elif id_busca < arvore["registro"]["ID"]:
+        return buscar_bst_balanceada(arvore["esquerda"], id_busca)
     else:
-        return buscar_bst_balanceada(arvore["direita"], matricula)
+        return buscar_bst_balanceada(arvore["direita"], id_busca)
 
 # main - executar os testes
 volumes = [10000, 50000, 100000]
@@ -191,10 +204,10 @@ with open('/Users/rodrigoalmeidadeoliveira/Documents/Doutorado/Disciplinas/Funda
             for i in range(volume):
                 dados_teste.append(gerar_registro())
             
-            # selecionar algumas matriculas para busca
-            matriculas_busca = []
+            # selecionar alguns IDs para busca
+            ids_busca = []
             for i in range(min(1000, volume // 10)):  # buscar 1000 ou 10% dos dados
-                matriculas_busca.append(dados_teste[random.randint(0, volume-1)]["matricula"])
+                ids_busca.append(dados_teste[random.randint(0, volume-1)]["ID"])
             
             # TESTE BST SEM BALANCEAMENTO
             print("  Testando BST sem balanceamento...")
@@ -221,8 +234,8 @@ with open('/Users/rodrigoalmeidadeoliveira/Documents/Doutorado/Disciplinas/Funda
             # buscar dados
             tempo_inicio_busca = time.time()
             
-            for matricula in matriculas_busca:
-                resultado = buscar_bst(arvore_normal, matricula)
+            for id_busca in ids_busca:
+                resultado = buscar_bst(arvore_normal, id_busca)
             
             tempo_fim_busca = time.time()
             tempo_busca = tempo_fim_busca - tempo_inicio_busca
@@ -273,8 +286,8 @@ with open('/Users/rodrigoalmeidadeoliveira/Documents/Doutorado/Disciplinas/Funda
             # buscar dados
             tempo_inicio_busca = time.time()
             
-            for matricula in matriculas_busca:
-                resultado = buscar_bst_balanceada(arvore_balanceada, matricula)
+            for id_busca in ids_busca:
+                resultado = buscar_bst_balanceada(arvore_balanceada, id_busca)
             
             tempo_fim_busca = time.time()
             tempo_busca = tempo_fim_busca - tempo_inicio_busca
