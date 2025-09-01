@@ -1,0 +1,7 @@
+tipo_bst,volume,tempo_insercao_media,tempo_insercao_desvio,tempo_busca_media,tempo_busca_desvio,memoria_mb_media,iteracoes_insercao_media,iteracoes_busca_media,altura_media,altura_desvio
+sem_balanceamento,10000,0.0740,0.0053,0.0072,0.0023,1.74,165895,16541,32.0,2.6
+com_balanceamento,10000,0.1631,0.0101,0.0049,0.0003,1.74,131088,12555,16.0,0.0
+sem_balanceamento,50000,0.4683,0.0275,0.0082,0.0009,8.76,991896,19876,40.0,2.1
+com_balanceamento,50000,1.1050,0.1352,0.0069,0.0013,8.76,772336,14907,19.0,0.0
+sem_balanceamento,100000,1.0802,0.0391,0.0089,0.0005,17.53,2093331,20969,40.8,2.2
+com_balanceamento,100000,2.3723,0.0901,0.0071,0.0006,17.53,1647377,15976,20.0,0.0
